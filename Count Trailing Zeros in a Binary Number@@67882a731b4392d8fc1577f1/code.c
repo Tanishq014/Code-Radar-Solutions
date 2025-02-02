@@ -10,7 +10,7 @@ int main() {
     
     for(int count=0;a>0;a=a>>1){
         if((a&1==0)){count+=1;}
-        else{break}
+        else{break;}
     }
 
     return 0;
