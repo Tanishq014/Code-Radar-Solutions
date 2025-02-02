@@ -4,7 +4,7 @@ int main() {
     scanf("%d",&a);
     int pos=1;
     int lsb;
-    for(pos=1,lsb==1,pos+=1){
+    for(pos=1,lsb=1,pos+=1){
         if (a&1!=1){
             a>>1;
             pos+=1;
