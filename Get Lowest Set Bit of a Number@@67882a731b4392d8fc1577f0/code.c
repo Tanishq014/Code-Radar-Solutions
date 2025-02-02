@@ -4,11 +4,12 @@ int main() {
     scanf("%d",&a);
     int pos;
     int lsb;
-    for(pos=1;a>0;pos+=1){
+    for(pos=1;a>0;pos++){
         if ((a&1)==0){
             a=a>>1;
         }
-        else{printf("%d",pos);}
+        else{printf("%d",pos);
+        return 0;}
     }
     return 0;
 }
