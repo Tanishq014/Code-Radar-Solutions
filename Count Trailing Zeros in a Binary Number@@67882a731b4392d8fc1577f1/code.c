@@ -12,6 +12,7 @@ int main() {
         if((a&1==0)){count+=1;}
         else{break;}
     }
+    printf("%d",count);
 
     return 0;
 }
