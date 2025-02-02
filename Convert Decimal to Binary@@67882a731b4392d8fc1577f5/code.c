@@ -10,7 +10,7 @@ int main() {
 
     numbits=sizeof(a)*8;
     for(int i=numbits;a>0;i--){
-        printf("%d",a&1);
+        printf("%d",(a&1));
     }
     return 0;
 }
