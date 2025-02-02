@@ -10,7 +10,7 @@ int main() {
     int count;
     
     for(count=0;a>0;a=a>>1){
-        if((a&1==0)){count+=1;}
+        if((a&1)==0){count+=1;}
         else{break;}
     }
     printf("%d",count);
