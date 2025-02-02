@@ -7,8 +7,9 @@ char* welcome() {
 int main() {
     int a;
     scanf("%d",&a);
+    int count;
     
-    for(int count=0;a>0;a=a>>1){
+    for(count=0;a>0;a=a>>1){
         if((a&1==0)){count+=1;}
         else{break;}
     }
