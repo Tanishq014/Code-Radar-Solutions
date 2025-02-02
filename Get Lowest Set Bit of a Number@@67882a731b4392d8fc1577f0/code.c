@@ -17,4 +17,4 @@ int main() {
         else{printf("%d",pos);}
     }
     return 0;
-}+
+}
