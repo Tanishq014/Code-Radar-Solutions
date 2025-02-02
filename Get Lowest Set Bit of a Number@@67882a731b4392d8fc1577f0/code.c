@@ -8,7 +8,7 @@ int main() {
         lsb=(a&1);
         if ((a&1)==0){
             a=a>>1;
-            pos+=1;
+            
         }
         else{printf("%d",pos);}
     }
