@@ -13,7 +13,7 @@ int main() {
     for(i=2;i<a;i++){
         if(a%i==0){status=false;break;}
     }
-    if(status){printf("Not Prime");}
-    else{printf("Prime");}
+    if(status){printf("Prime");}
+    else{printf("Not Prime");}
     return 0;
 }
