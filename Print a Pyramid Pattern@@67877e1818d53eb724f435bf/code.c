@@ -11,4 +11,4 @@ int main() {
         for(j=n;i>=0;j--){printf(" ");}
         for(j=i;j>=0;j--){if(i>0){printf("\n");}}
     return 0;
-}
+}}
