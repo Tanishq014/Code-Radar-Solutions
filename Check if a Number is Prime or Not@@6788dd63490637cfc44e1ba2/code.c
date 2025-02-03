@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 char* welcome() {
     return "Welcome to Code Radar!";
@@ -10,7 +11,7 @@ int main() {
     int i=0;
     bool status=true;
     for(i=2;i<a;i++){
-        if(a%1==0){status=false;break;}
+        if(a%i==0){status=false;break;}
     }
     if(status){printf("Not Prime");}
     else{printf("Prime");}
