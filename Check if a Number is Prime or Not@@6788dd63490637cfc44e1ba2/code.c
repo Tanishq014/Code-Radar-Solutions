@@ -8,9 +8,11 @@ int main() {
     int a;
     scanf("%d",&a);
     int i=0;
-    bool status=true
+    bool status=true;
     for(i=2;i<a;i++){
         if(a%1==0){status=false;break;}
     }
+    if(status){printf("Not Prime");}
+    else{printf("Prime");}
     return 0;
 }
