@@ -8,7 +8,7 @@ int main() {
 
     int numbits=sizeof(a)*8;
     for(int i=numbits;a>0;i--){
-        binary[32-i];
+        a&1=binary[32-i];
         a>>=1;
     }
     printf("%d",binary);
