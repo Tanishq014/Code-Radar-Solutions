@@ -11,6 +11,11 @@ int main() {
         binary[32-i]=a&1;
         a>>=1;
     }
-    printf("%d",binary);
+    int j=numbits-i;
+    int k=0;
+    while(j>=k){
+        printf("%d",binary[k]);
+        k++;
+    }
     return 0;
 }
