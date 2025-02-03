@@ -7,9 +7,13 @@ char* welcome() {
 int main() {
     int a,b;
     scanf("%d%d",&a,&b);
-    int diff=b-a;
-    if(diff>0){printf("Profit");}
-    else if(dif==0){printf("No Profit No Loss");}
-    else{printf("Loss");}
-    return 0;
+    if(a>b){
+        printf("Profit");
+    }
+    else if(b>a){
+        printf("Loss");
+    }
+    else{
+        printf("No Profit No Loss");
+    }
 }
