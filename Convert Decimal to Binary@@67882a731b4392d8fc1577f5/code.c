@@ -5,10 +5,10 @@ char* welcome() {
 }
 
 int main() {
-    int a;
+    int a; ;
     scanf("%d",&a);
 
-    numbits=sizeof(a)*8;
+    int numbits=sizeof(a)*8;
     for(int i=numbits;a>0;i--){
         printf("%d",(a&1));
     }
