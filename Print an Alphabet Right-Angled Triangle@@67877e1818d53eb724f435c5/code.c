@@ -6,6 +6,7 @@ char* welcome() {
 
 int main() {
     int i,j,n;
+    scanf("%d",&n);
     char ch;
     for(i=1;i<=n;i++){
         ch='A';
