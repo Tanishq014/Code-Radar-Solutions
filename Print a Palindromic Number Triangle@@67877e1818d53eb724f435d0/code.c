@@ -12,7 +12,7 @@ int main() {
         for(j=1;j<=2*i-1;j++){
                 
                 if(j<i){printf("%d",j);}if(j==i){printf("%d",i);}
-                if(j>i){printf("%d\n",2*i-j);}
+                if(j>i){printf("%d",2*i-j);}
                 
 
         }
