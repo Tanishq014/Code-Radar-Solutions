@@ -13,7 +13,7 @@ int main() {
                 if(j==i){printf("%d",i);}
                 if(j<i){printf("%d",j);}
                 if(j>i){printf("%d",2*i-j);}
-                printf("\n")
+                printf("\n");
 
         }
     }
