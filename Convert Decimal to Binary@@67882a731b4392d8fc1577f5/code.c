@@ -5,6 +5,7 @@ int main() {
     scanf("%d",&a);
     int total=sizeof(a)*8;
     int binary[32];
+    if(a==0){printf("0");}
     for(i=0;a>0;i++){
         binary[i]=a&1;
         a=a>>1;
