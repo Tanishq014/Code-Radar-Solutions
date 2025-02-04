@@ -10,10 +10,10 @@ int main() {
     for(i=1;i<=n;i++){
         for(j=0;j<n-1;j++){printf(" ");}
         for(j=1;j<=2*i-1;j++){
-                if(j==i){printf("%d",i);}
-                if(j<i){printf("%d",j);}
-                if(j>i){printf("%d",2*i-j);}
-                printf("\n");
+                
+                if(j<i){printf("%d",j);}if(j==i){printf("%d",i);}
+                if(j>i){printf("%d\n",2*i-j);}
+                
 
         }
     }
