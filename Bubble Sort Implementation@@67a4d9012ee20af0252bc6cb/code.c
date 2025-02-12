@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-void bubblesort();
 int main(){
     int n,j,i;
     scanf("%d",&n);
@@ -25,3 +24,11 @@ int main(){
     for(int i=0;i<n;i++){printf("%d ",arr[i]);}
     return 0;
 }
+
+
+
+
+
+
+
+
