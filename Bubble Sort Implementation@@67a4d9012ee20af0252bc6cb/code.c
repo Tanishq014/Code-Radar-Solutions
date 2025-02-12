@@ -16,7 +16,7 @@ void(int arr1[], int k){
             int tempp;
             tempp=arr[j];
             arr[j+1]=arr[j];
-            arr[j+1]=tempp
+            arr[j+1]=tempp;
         }
     }
 }
