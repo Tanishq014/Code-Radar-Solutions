@@ -30,7 +30,7 @@ int main()
     for(i=0;i<n;i++)
     {
         if(arr[i+1]==arr[i]+1){count+=1;}
-        else{count=0;}
+        
     }
     printf("%d",count);
 
