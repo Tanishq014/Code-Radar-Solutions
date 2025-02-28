@@ -23,18 +23,28 @@ int main()
         }
     }
     for(i=0;i<n;i++){printf("%d ",counted[i]);}
+    
     int tobeprinted=0;
     int tb;
     int xxy;
 
-    for(i=0;i<n;i++)
+    /*for(i=0;i<n;i++)
     {
         if(counted[i]>tobeprinted){tobeprinted=counted[i];tb=arr[i];}
         else if(counted[i]==tobeprinted){xxy=-1;}
-    }
+    }*/
 
-    if(xxy==-1){printf("-1");}
-    else{printf("%d",tobeprinted);}
+    int dn=0;
+
+    for(i=0;i<n;i++)
+    {
+        if(counted[i]>n/2;){printf("%d",arr[i]);dn=1;}
+        
+    }
+    if(dn==0){printf("-1");}
+
+    /*if(xxy==-1){printf("-1");}
+    else{printf("%d",tobeprinted);}*/
 
 
 
