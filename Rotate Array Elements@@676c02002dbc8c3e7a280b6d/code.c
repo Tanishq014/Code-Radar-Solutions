@@ -11,7 +11,7 @@ int main()
     int arr1[N];
     for(i=0;i<N;i++)
     {
-        if(i>N-k-1)
+        if(i>=N-k)
         {
             arr1[i+3-N]=arr[i];
         }
