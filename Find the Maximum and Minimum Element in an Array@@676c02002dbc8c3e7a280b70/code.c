@@ -5,7 +5,7 @@ int main()
     scanf("%d",&n);
     int arr[n];
     for(i=0;i<n;i++){scanf("%d",&arr[i]);}
-    int min=arr[i];
+    int min=arr[0];
     int max=0;
     for(i=0;i<n;i++)
     {
