@@ -12,7 +12,7 @@ int main()
     {
         arr[n-i-1]=arr[0];
     }
-    for(i=0;i<n;i++){scanf("%d",arr1[i]);}
+    for(i=0;i<n;i++){printf("%d",arr1[i]);}
     
 
 
