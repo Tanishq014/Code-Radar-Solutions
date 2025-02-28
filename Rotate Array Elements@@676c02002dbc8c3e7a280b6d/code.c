@@ -13,7 +13,7 @@ int main()
     {
         if(i>=N-k)
         {
-            arr1[i+3-N]=arr[i];
+            arr1[i+k-N]=arr[i];
         }
         else
         {
