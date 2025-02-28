@@ -20,6 +20,6 @@ int main()
             arr1[i+k]=arr[i];
         }
     }
-    for(i=0;i<N;i++){printf("%d\n",arr1[i]);}
+    for(i=0;i<N;i++){printf("%d ",arr1[i]);}
     return 0;
 }
