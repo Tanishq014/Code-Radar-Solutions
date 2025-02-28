@@ -8,7 +8,7 @@ int main()
     for(i=0;i<N;i++){scanf("%d",&arr[i]);}
     scanf("%d",&k);
 
-    int arr1[N];
+    /*int arr1[N];
     for(i=0;i<N;i++)
     {
         if(i<k)
@@ -19,7 +19,7 @@ int main()
         {
             arr1[i+k]=arr[i];
         }
-    }
-    for(i=0;i<N;i++){printf("%d\n",arr1[i]);}
+    }*/
+    for(i=0;i<N;i++){printf("%d\n",arr[i]);}
     return 0;
 }
