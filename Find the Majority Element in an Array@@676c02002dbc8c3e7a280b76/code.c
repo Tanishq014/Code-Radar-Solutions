@@ -34,7 +34,7 @@ int main()
     }
 
     if(xxy==-1){printf("-1");}
-    else{printf("%d",tb);}
+    else{printf("%d",tobeprinted);}
 
 
 
