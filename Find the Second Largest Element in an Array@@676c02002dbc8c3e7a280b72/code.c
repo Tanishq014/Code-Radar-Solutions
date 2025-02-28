@@ -19,6 +19,6 @@ int main()
         else if(arr[i]>max2 && arr[i]!=max){max2=arr[i];}
     }
     if(max==max2){printf("-1");}
-    else(printf("%d",max2);)
+    else{printf("%d",max2);}
         }    return 0;
 }
