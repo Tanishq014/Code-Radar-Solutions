@@ -28,14 +28,14 @@ int main()
     int count=1;
     int maxc=1;
 
-    for(i=0;i<n-1;i++)
+    for(i=0;i<n;i++)
     {
-        if(arr[i+1]!=arr[i]+1){if(arr[i]+1>0){printf("%d",arr[i]+1);}else{continue;}}
-       
-    }
+      int smallest=1;
+      if(arr[i]==smallest){smallest++;}
 
-    if(count>maxc){ printf("%d",count);}
-    else{printf("%d",maxc);}
+    }
+printf("%d",smallest);
+
 
 
     return 0;
