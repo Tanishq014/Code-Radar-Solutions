@@ -27,7 +27,7 @@ int main()
                 {
                     count++;
                     counted[j]=1;
-                }printf("%d %d",arr[i],count);
+                }printf("%d %d ",arr[i],count);
             }
         }
     }
