@@ -9,7 +9,7 @@ int main()
         scanf("%d",&arr[i]);
     }
     int max=arr[0];
-    int max2=-100000;
+    int max2=-1000000;
     if(n<2){printf("-1");}
 
     else{
