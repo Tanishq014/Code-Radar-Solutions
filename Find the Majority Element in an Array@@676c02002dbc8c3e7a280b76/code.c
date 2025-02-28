@@ -23,7 +23,7 @@ int main()
         }
     }
     for(i=0;i<n;i++){printf("%d ",counted[i]);}
-    int tobeprinted=0;
+    //int tobeprinted=0;
     int tb;
     int xxy;
 
