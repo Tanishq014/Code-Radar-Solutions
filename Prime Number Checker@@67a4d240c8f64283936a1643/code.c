@@ -9,7 +9,7 @@ int isPrime(int num)
         
         for(int i=2;i<=num;i++)
         {
-            if(n%i==0){iss=1}
+            if(num%i==0){iss=1}
         }
     }return iss;
 }
