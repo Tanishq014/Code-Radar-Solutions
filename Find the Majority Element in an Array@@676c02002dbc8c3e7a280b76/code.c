@@ -2,27 +2,31 @@
 
 int main()
 {
-    int n,i,j,k;
+    int n,i,j;
     scanf("%d",&n);
     int arr[n];
     for(i=0;i<n;i++){scanf("%d",&arr[i]);}
-    scanf("%d",&k);
+    
 
    
-    int counted[n];
-    for(i=0;i<n;i++){counted[i]=1;}
+        int counted[n]; 
+    for (i = 0; i < n; i++) {
+        counted[i] = -1; 
+    }
 
-
-    for(i=0;i<n;i++)
-    {   if(counted[i]==1)
-        {
-        for(j=1;j<n;j++)
-            {
-                if(arr[i]==arr[j]){counted[i]+=1;counted[j]=0; }
+  
+    for (i = 0; i < n; i++) {
+        if (counted[i] == -1) { 
+            int count = 1;
+            for (j = i + 1; j < n; j++) { 
+                if (arr[i] == arr[j]) {
+                    count++;
+                    counted[j] = 0; 
+                }
             }
+            counted[i] = count; 
         }
     }
-    for(i=0;i<n;i++){printf("%d ",counted[i]);}
     
     int tobeprinted=0;
     int tb;
