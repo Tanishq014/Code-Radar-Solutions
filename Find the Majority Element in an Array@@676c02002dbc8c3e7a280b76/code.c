@@ -18,7 +18,7 @@ int main()
         {
         for(j=1;j<n;j++)
             {
-                if(arr[i]==arr[j]){arr[i]+=1;arr[j]=0; }
+                if(arr[i]==arr[j]){counted[i]+=1;counted[j]=0; }
             }
         }
     }
