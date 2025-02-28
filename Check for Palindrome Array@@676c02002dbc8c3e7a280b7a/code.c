@@ -10,7 +10,7 @@ int main()
 
     for(i=0;i<n;i++)
     {
-        arr1[n-i-1]=arr[0];
+        arr1[n-i-1]=arr[i];
     }
     for(i=0;i<n;i++){printf("%d",arr1[i]);}
     
