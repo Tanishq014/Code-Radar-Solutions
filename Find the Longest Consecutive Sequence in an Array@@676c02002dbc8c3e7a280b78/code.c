@@ -26,13 +26,15 @@ int main()
     }
 
     int count=1;
+    int maxc=1;
 
     for(i=0;i<n-1;i++)
     {
         if(arr[i+1]==arr[i]+1){count+=1;}
-        else{count=1;}
+        else
+        { if(count>maxc){maxc=count;count=1;}else{count=1;}}
     }
-    printf("%d",count);
+    printf("%d",maxc);
 
 
     return 0;
