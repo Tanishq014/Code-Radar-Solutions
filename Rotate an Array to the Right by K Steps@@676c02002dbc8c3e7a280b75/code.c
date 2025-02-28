@@ -7,6 +7,7 @@ int main()
     int arr[N];
     for(i=0;i<N;i++){scanf("%d",&arr[i]);}
     scanf("%d",&k);
+    if(k>N){k=k-N;}
 
     int arr1[N];
     for(i=0;i<N;i++)
