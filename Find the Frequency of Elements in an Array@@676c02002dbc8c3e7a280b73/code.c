@@ -20,8 +20,8 @@ int main()
         if(counted[i]==1)
         continue;
         else
-        int count=1;
-        {
+        
+        {   int count=1;
             for(j=i+1;j<n;j++)
             {
                 if(arr[i]==arr[j])
