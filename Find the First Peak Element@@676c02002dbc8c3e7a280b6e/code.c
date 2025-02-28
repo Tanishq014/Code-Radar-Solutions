@@ -17,5 +17,5 @@ int main()
             
         }
     }
-    if(iss){printf("-1");}
+    //if(iss){printf("-1");}
 }
