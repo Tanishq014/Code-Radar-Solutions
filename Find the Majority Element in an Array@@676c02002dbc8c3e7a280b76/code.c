@@ -8,7 +8,7 @@ int main()
     for(i=0;i<n;i++){scanf("%d",&arr[i]);}
     scanf("%d",&k);
 
-    int mcount=0,melement=0;
+   
     int counted[n];
     for(i=0;i<n;i++){counted[i]=1;}
 
