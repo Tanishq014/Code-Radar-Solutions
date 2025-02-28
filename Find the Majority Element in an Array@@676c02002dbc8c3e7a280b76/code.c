@@ -38,7 +38,7 @@ int main()
 
     for(i=0;i<n;i++)
     {
-        if(counted[i]>n/2;){printf("%d",arr[i]);dn=1;}
+        if(counted[i]>n/2){printf("%d",arr[i]);dn=1;}
         
     }
     if(dn==0){printf("-1");}
