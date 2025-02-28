@@ -34,7 +34,9 @@ int main()
         else
         { if(count>maxc){maxc=count;count=1;}else{count=1;}}
     }
-    printf("%d",maxc);
+
+    if(count>maxc){ printf("%d",count);}
+    else{printf("%d",maxc);}
 
 
     return 0;
