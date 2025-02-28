@@ -13,7 +13,7 @@ int main()
     if(n<2){printf("-1");}
 
     else{
-    for(i=0;i<n;i++)
+    for(i=1;i<n;i++)
     {
         if(arr[i]>max){max2=max;max=arr[i];}
         else if(arr[i]>max2 && arr[i]!=max){max2=arr[i];}
