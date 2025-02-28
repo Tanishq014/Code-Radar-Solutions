@@ -20,7 +20,7 @@ int main()
     }
 
     if(iss){printf("YES");}
-    else{printf("NO")}
+    else{printf("NO");}
     
 
 
