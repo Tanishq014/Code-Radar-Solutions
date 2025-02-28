@@ -24,16 +24,17 @@ int main()
     }
 
     int tobeprinted=0;
+    int tb;
     int xxy;
 
     for(i=0;i<n;i++)
     {
-        if(counted[i]>tobeprinted){tobeprinted=counted[i];}
+        if(counted[i]>tobeprinted){tobeprinted=counted[i];tb=arr[i];}
         else if(counted[i]==tobeprinted){xxy=-1;}
     }
 
     if(xxy==-1){printf("-1");}
-    else{printf("%d",tobeprinted);}
+    else{printf("%d",tb);}
 
 
 
