@@ -2,14 +2,14 @@
 
 int main()
 {
-    int N,i,j,k;
-    scanf("%d",&N);
-    int arr[N];
-    for(i=0;i<N;i++){scanf("%d",&arr[i]);}
+    int n,i,j,k;
+    scanf("%d",&n);
+    int arr[n];
+    for(i=0;i<n;i++){scanf("%d",&arr[i]);}
     scanf("%d",&k);
 
     int mcount=0,melement=0;
-    int counted[N];
+    int counted[n];
     for(i=0;i<n;i++){counted[i]=1;}
 
 
