@@ -20,5 +20,5 @@ int main()
     }
     /*if(max==max2){printf("-1");}
     else{printf("%d",max2);}
-        }*/printf("%d",max2);    return 0;
+        */}printf("%d",max2);    return 0;
 }
