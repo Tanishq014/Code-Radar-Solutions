@@ -12,7 +12,7 @@ int main()
     {
         arr1[n-i-1]=arr[i];
     }
-    int iss=1
+    int iss=1;
 
     for(i=0;i<n;i++)
     {
