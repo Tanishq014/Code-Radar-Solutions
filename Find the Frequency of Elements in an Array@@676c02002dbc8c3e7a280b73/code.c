@@ -19,6 +19,7 @@ int main()
     {
         if(counted[i]==1)
         continue;
+        int count=1;
         else
         
         {   int count=1;
