@@ -6,7 +6,7 @@ int main()
     scanf("%d",&n);
     int arr[n];
     for(i=0;i<n;i++){scanf("%d",&arr[i]);}
-    int iss=1
+    int iss=1;
     
     for(i=0;i<n;i++)
     {
@@ -17,5 +17,5 @@ int main()
             
         }
     }
-    //if(iss){printf("-1");}
+    if(iss){printf("-1");}
 }
