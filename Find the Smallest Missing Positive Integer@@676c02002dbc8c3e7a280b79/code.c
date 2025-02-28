@@ -25,12 +25,10 @@ int main()
         }
     }
 
-    int count=1;
-    int maxc=1;
-
+int smallest=1;
     for(i=0;i<n;i++)
     {
-      int smallest=1;
+      
       if(arr[i]==smallest){smallest++;}
 
     }
