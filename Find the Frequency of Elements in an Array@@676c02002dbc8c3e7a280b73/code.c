@@ -19,9 +19,7 @@ int main()
     {
         if(counted[i]==1)
         continue;
-        int count=1;
         else
-        
         {   int count=1;
             for(j=i+1;j<n;j++)
             {
@@ -29,9 +27,9 @@ int main()
                 {
                     count++;
                     counted[j]=1;
-                }
+                }printf("%d %d",arr[i],count);
             }
-        }printf("%d %d",arr[i],count);
+        }
     }
 
 
