@@ -25,8 +25,14 @@ int main()
         }
     }
 
-    for(i=0;i<n;i++){printf("%d",arr[i]);}
+    int count=1;
 
+    for(i=0;i<n;i++)
+    {
+        if(arr[i+1]==arr[i]+1){count+=1;}
+        else{count=0;}
+    }
+    printf("%d",count);
 
 
     return 0;
