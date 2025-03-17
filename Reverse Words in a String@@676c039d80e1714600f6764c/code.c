@@ -7,7 +7,7 @@ int main()
     int i,j,k,start=0,end;
     for(i=0;s[i]!='\0';i++)
     {
-        if(s[i]==' ')
+        if(s[i]==' '||s[i]=='\0')
         {
             end=i;
             for(k=end-1;k>=start;k--)
