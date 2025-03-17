@@ -9,7 +9,7 @@ int main()
     {
         if(s[i]==' '||i==strlen(s)-1)
         {
-            if(s[i]==' '){end=i;}
+            if(s[i]==' '){end=i-1;}
             else if(i==strlen(s)-1){end=i+1;}
             for(k=end;k>=start;k--)
             {
