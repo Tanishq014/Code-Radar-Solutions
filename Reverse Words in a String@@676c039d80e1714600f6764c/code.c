@@ -14,8 +14,8 @@ int main()
             for(k=end;k>=start;k--)
             {
                 printf("%c",s[k]);
-            }printf(" ");start=end+1;
-        }
+            }start=end+1;
+        }printf(" ");
     }
 
 }
