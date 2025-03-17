@@ -8,5 +8,5 @@ int main()
     {
         if(s[i]==a){count++;}
 
-    }printf("%d",count)
+    }printf("%d",count);
 }
