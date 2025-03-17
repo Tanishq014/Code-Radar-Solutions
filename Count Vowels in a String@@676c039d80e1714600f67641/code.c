@@ -11,7 +11,7 @@ int main(){
     for(int i=0;i<l;i++)
     {
         char t=tolower(str[i]);
-        if(t=='a'||t=='e'||t=='i'||t=='o'||t=='u'){count+=1};
+        if(t=='a'||t=='e'||t=='i'||t=='o'||t=='u'){count+=1;}
     }
     printf("%d",count);
     return 0;
