@@ -2,8 +2,7 @@
 #include <string.h>
 #include <ctype.h>
 
-int main
-{   
+int main{   
     char str[100];
     scanf("%s",&str);
 
