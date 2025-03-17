@@ -6,7 +6,7 @@ int main()
     scanf("%[^\n]",&s1);
      getchar();
     scanf("%[^\n]",&s2);
-     getchar();
+     
     int freq1[256]={0};
     int freq2[256]={0};
     for(int i=0;s1[i]!='\0';i++)
@@ -15,7 +15,7 @@ int main()
     }
     for(int i=0;s2[i]!='\0';i++)
     {
-        freq2[(int)s1[i]]++;
+        freq2[(int)s2[i]]++;
     }
     int iss=1;
     for(int i=0;i<256;i++)
