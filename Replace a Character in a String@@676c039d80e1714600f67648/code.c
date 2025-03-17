@@ -5,7 +5,7 @@ int main()
     scanf("%[^\n]",&s);
     scanf("%c",&a);
     scanf("%c",&b);
-    for(i=0;i!='\0';i++)
+    for(i=0;s[i]!='\0';i++)
     {
         if(s[i]==a){printf("%c",b);}
         else{printf("%c",s[i]);}
