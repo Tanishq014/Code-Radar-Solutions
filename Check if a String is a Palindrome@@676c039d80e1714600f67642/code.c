@@ -3,11 +3,11 @@
 
 int main()
 {
-    char s[];
+    char s[100];
     scanf("%s",&s);
     int iss=1;
     int l=strlen(s);
-    for(i=0;i<l/2;i++)
+    for(int i=0;i<l/2;i++)
     {
         if(str[i]!=str[l-1]){iss=0;}
     }
