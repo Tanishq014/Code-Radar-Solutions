@@ -5,15 +5,15 @@ int main()
 {
     char s[100];
     scanf("%[^\n]", s);
+    int l = strlen(s);
     int count = 0;
-    int i = 0;
-    
-    // Count leading spaces
-    while(s[i] == ' ') {
-        count++;
-        i++;
+
+    // Count spaces that are followed by alphabetic characters
+    for(int i = 0; i < l; i++) {
+        if(s[i] == ' ' && i+1 < l && isalpha((unsigned char)s[i+1])) {
+            count++;
+        }
     }
-    
     printf("%d", count);
     return 0;
 }
