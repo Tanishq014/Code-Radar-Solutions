@@ -3,7 +3,8 @@
 #include <ctype.h>
 
 int main
-{   char str[100];
+{   
+    char str[100];
     scanf("%s",&str);
 
     int count=0;
