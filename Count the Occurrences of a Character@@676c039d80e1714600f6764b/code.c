@@ -3,7 +3,7 @@
 int main()
 {
     char s[100],a;
-    int count=0;
+    int count=0,i;
     for(i=0;s[i]!='\0';i++)
     {
         if(s[i]==a){count++;}
