@@ -5,13 +5,15 @@ int main()
 {
     char s[100];
     scanf("%[^\n]", s);
-    int l=strlen(s);
-    int count=0;
-
-    for(int i=0;i<=l;i++){
-        if(s[i]==' '&& isalpha(s[i+1])){count+=1;}
-        else if(s[i]=='\0'){break;}
-        else{break;}
+    int count = 0;
+    int i = 0;
+    
+    // Count leading spaces
+    while(s[i] == ' ') {
+        count++;
+        i++;
     }
-    printf("%d",count);
+    
+    printf("%d", count);
+    return 0;
 }
