@@ -1,19 +1,24 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-int main()
-{
-    char s[100];
-    scanf("%[^\n]", s);
-    int l = strlen(s);
-    int count = 0;
 
-    // Count spaces that are followed by alphabetic characters
-    for(int i = 0; i < l; i++) {
-        if(s[i] == ' ' && i+1 < l && isalpha((unsigned char)s[i+1])) {
+int main() {
+    char str[200];
+    int count = 0, i;
+
+    // Prompt the user to enter a string
+    printf("Enter a string:\n");
+    scanf(" %[^\n]", str);  // Reads a line of input, including spaces
+
+    for (i = 0; str[i] != '\0'; i++) {
+        // Check for a space followed by a non-space character
+        if (str[i] == ' ' && str[i + 1] != ' ' && str[i + 1] != '\0') {
             count++;
         }
     }
-    printf("%d", count);
+
+    // Add 1 to count to include the first word
+    printf("Number of words in the given string: %d\n", count + 1);
+
     return 0;
 }
