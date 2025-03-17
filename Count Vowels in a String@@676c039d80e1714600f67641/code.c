@@ -3,8 +3,8 @@
 #include <ctype.h>
 
 int main
-{   char str[100];
-    scanf("%s",str)
+{  char str[100];
+    scanf("%s",str);
 
     count=0;
     int l=strlen(str);
