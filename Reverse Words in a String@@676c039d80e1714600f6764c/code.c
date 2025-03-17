@@ -5,7 +5,7 @@ int main()
     char s[100];
     scanf("%[^\n]",&s);
     int i,j,k,start=0,end;
-    for(i=0;i<strlen(s);i++)
+    for(i=0;i<=strlen(s);i++)
     {
         if(s[i]==' '||s[i]=='\0')
         {
