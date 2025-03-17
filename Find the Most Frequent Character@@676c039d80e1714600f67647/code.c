@@ -10,22 +10,29 @@ int main() {
     printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
 
-    // Remove newline character from input
+    // Remove newline character from input (added by fgets)
     str[strcspn(str, "\n")] = '\0';
 
+    // Iterate through each character in the string
     for (int i = 0; str[i] != '\0'; i++) {
-        int count = 1;
-        for (int j = i + 1; str[j] != '\0'; j++) {
+        int count = 0;
+
+        // Count frequency of str[i]
+        for (int j = 0; str[j] != '\0'; j++) {
             if (str[i] == str[j]) {
                 count++;
             }
         }
-        if (count > maxFreq) {
+
+        // Update most frequent character based on conditions
+        if (count > maxFreq || (count == maxFreq && i > strchr(str, mostFrequentChar) - str)) {
             maxFreq = count;
             mostFrequentChar = str[i];
         }
     }
 
+    // Output the result
     printf("The most frequent character is '%c' with a frequency of %d.\n", mostFrequentChar, maxFreq);
+
     return 0;
 }
