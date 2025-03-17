@@ -10,7 +10,7 @@ int main()
         if(s[i]==' '||s[i]=='\0')
         {
             end=i;
-            for(k=end;k>=start;k--)
+            for(k=end-1;k>=start;k--)
             {
                 printf("%c",s[k]);
             }start=end+1;if (s[i] == ' ') {
