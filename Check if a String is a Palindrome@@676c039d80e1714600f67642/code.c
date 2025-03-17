@@ -9,7 +9,7 @@ int main()
     int l=strlen(s);
     for(int i=0;i<l/2;i++)
     {
-        if(str[i]!=str[l-1]){iss=0;}
+        if(s[i]!=s[l-1]){iss=0;}
     }
     if(iss){printf("Yes");}
     else{printf("No");}
