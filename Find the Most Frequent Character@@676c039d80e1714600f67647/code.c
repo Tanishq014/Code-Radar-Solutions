@@ -8,6 +8,6 @@ int main()e
     for(i=0;s[i]!='\0',i++)
     {
         freq[(int)s[i]]++;
-    }
+    }printf("%s",freq);
 }
 printf("%s",freq);
