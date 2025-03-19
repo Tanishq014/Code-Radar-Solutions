@@ -10,4 +10,3 @@ int main()e
         freq[(int)s[i]]++;
     }printf("%s",freq);
 }
-printf("%s",freq);
