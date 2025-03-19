@@ -5,12 +5,13 @@ int main()
 {
     char s[1100],freq[256]={0};
     scanf("%[^\n]",&s);
-    for(int i=0;s[i]!='\0';i++)
+    for(int j=0;s[j]!='\0';j++)
     {
-        freq[(int)s[i]]++;
+        freq[(int)s[j]]++;
     }
     int max=0,maxi=0;
-    for(int i=0;i<=256;i++)
+    int i;
+    for(i=0;i<=256;i++)
     {
         if(freq[i]>max){max=freq[i];maxi=i;}
     }
