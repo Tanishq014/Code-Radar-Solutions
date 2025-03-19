@@ -9,10 +9,10 @@ int main()
     scanf("%[^\n]",&s2);
     int iss=0;
     for(i=0;i<strlen(s1)+1-strlen(s2);i++)
-    {   int yess=1
+    {   int yess=1;
         for(j=i;j<i+strlen(s2);j++)
         {
-            yess=1
+            yess=1;
             if(s1[j]!=s2[j])
             {yess=0;break;}
         }if(yess){printf("Yes");break;}
