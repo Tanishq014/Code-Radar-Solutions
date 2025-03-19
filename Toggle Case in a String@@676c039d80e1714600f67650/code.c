@@ -9,7 +9,7 @@ int main()
     {
         if(islower(s[i]))
         {
-            printf("%c",toupper(s[i]);)
+            printf("%c",toupper(s[i]));
         }
         else if(s[i]==' '){printf(" ");}
         else{printf("%c",tolower(s[i]));}
