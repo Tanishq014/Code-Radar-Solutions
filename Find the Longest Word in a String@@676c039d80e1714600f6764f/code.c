@@ -11,7 +11,7 @@ int main()
         {   
             
 
-            if(i-start>maxlen){maxi=start;maxe=i;maxlen=i-start}
+            if(i-start>maxlen){maxi=start;maxe=i;maxlen=i-start;}
             start=i+1;
         }
     }
