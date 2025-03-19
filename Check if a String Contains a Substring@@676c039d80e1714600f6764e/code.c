@@ -3,6 +3,7 @@
 int main()
 {
     char s1[100];
+    int i,j;
     scanf("%[^\n]",&s1);
         char s2[100];
     scanf("%[^\n]",&s2);
