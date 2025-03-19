@@ -14,9 +14,9 @@ int main()
         for(j=0;j<strlen(s2);j++)
         {
             yess=1;
-            if(s1[j+i]!=s2[j])
+            if(s1[i+j]!=s2[j])
             {yess=0;break;}
-        }if(yess){printf("Yes");break;iss=1;}
+        }if(yess){printf("Yes");iss=1;break;}
     }if(iss==0){printf("No");}
 
 }
