@@ -3,9 +3,9 @@
 
 int main()              
 {
-    char s[],freq[256]={0};
+    char s[1100],freq[256]={0};
     scanf("%[^\n]",&s);
-    for(int i=0;s[i]!='\0',i++)
+    for(int i=0;s[i]!='\0'[]i++)
     {
         freq[(int)s[i]]++;
     }printf("%s",freq);
