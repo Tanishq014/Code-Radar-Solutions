@@ -8,7 +8,7 @@ int main()
     for(int i=0;i<strlen(s)-1;i++)
     {
         int count=0;
-        for(int j=i+1;j<strlen(s);j++)
+        for(int j=0;j<strlen(s);j++)
         {
             if(s[i]==s[j]){count++;}
         }
