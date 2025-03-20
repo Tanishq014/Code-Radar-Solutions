@@ -12,6 +12,6 @@ int main()
     {
         if(s1[i]!=s2[strlen(s2)-i-1]){iss=0;break;}
     }
-    if(iss){printf("Yes")}
+    if(iss){printf("Yes");}
     else{printf("No");}
 }
