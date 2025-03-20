@@ -8,7 +8,7 @@ int main()
     scanf("%[^\n]",&s);
     for(int i=0;s[i]!='\0';i++)
     {
-        if((int)s[i]>90){printf("%c",s[i]-32)}
+        if((int)s[i]>90){printf("%c",s[i]-32);}
         else{printf("%c",s[i]);}
     }
 }
