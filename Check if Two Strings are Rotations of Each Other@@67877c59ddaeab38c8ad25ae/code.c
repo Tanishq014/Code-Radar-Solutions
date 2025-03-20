@@ -7,7 +7,7 @@ int main()
     scanf("\n");
     scanf("%[^\n]",&s2);
     scanf("\n");
-    sc=strcat(s1,s1);
+    strcat(s1,s1);
     if(strstr(sc,s2)){printf("Yes");}
     else{printf("No");}
 }
