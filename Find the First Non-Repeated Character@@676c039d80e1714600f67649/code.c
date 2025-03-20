@@ -11,7 +11,7 @@ int main()
         for(int j=0;j<strlen(s);j++)
         {
             if(s[i]==s[j]){count++;}
-        }
+        }count--;
         if(count==0){printf("%c",s[i]);iss=1;break;}
     }if(!iss){printf("-");}
 }
