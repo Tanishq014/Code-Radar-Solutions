@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 int main()
 {
     int n;
@@ -20,6 +21,6 @@ int main()
     }
     for(int i=0;i<n;i++)
     {
-        printf("%d ",arrn[i]);
+        printf("%d ",abs(arrn[i]));
     }
 }
