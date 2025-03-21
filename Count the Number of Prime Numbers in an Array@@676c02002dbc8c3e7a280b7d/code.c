@@ -21,7 +21,7 @@ int main()
     int count=0;
     for(i=0;i<n;i++)
     {
-        if(isprime){count++;}
+        if(isprime(arr[i])){count++;}
     }printf("%d",count);
 
 }
