@@ -1,7 +1,8 @@
 #include <stdio.h>
 int isprime(int a)
 {
-    if(a==1||a==2){return 0;}
+    if(a==1){return 1;}
+    else if(a==2){return 0;}
     else{   int iss=1;
             for(int k=2;k<a;k++)
             {
