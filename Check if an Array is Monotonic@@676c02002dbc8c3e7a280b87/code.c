@@ -8,13 +8,13 @@ int main()
     {
         scanf("%d",&arr[i]);
     }
-    int inc=0;
+    int inc=2;
     for(int i=0;i<n-1;i++)
     {
         if(arr[i]==arr[i+1]){continue;}
         else if(arr[i]<arr[i+1]){inc=1;break;}
         else if(arr[i]>arr[i+1]){inc=0;break;}
-        else if((arr[i]==arr[i+1])&&i==n-2){inc=2;break;}
+        //else if((arr[i]==arr[i+1])&&i==n-2){inc=2;break;}
 
     }
     int iss=1;
