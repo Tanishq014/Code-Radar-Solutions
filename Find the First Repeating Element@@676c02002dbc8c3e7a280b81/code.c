@@ -13,7 +13,7 @@ int main()
     {   int broken=0;
         for(int j=i+1;j<n;j++)
         {   
-            if(arr[i]==arr[j]){printf("%d",arr[i]);broken=1;break;}
+            if(arr[i]==arr[j]){printf("%d",arr[i]);broken=1;iss=1;break;}
         }if(broken){break;}
     }
     if(!iss){printf("-1");}
