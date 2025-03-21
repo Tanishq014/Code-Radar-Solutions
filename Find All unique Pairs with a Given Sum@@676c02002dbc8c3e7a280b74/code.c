@@ -15,8 +15,8 @@ int main()
     {
         for(int j=i+1;j<n;j++)
         {
-            if(arr[i]+arr[j]==t){printf("%d %d",arr[i],arr[j]);printf("\n");}
-
+            if((arr[i]+arr[j]==t)&&arr[i]!=arr[j]){printf("%d %d",arr[i],arr[j]);printf("\n");}
+            else if(arr[i]==arr[j]){printf("%d %d",arr[i],arr[j]);}
         }
     }
 
