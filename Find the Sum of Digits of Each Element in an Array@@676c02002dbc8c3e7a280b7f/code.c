@@ -9,16 +9,14 @@ int main()
     int arrn[n];
     for(int i=0;i<n;i++)
     {
-        char temp[100];
-        scanf("%s",&temp);
-        //scanf("%d",&arr[i]);
-        int len=strlen(temp);
-        int sum=0;
-        for(int j=0;j<len;j++)
+        int temp,sum;
+        scanf("%d",&temp);
+        for(i=0;temp!=0;i++)
         {
-            sum+=temp[j];
-        }
-        arrn[i]=sum;
+            sum=temp%10;
+            temp=temp/10;
+        }arrn[i]=sum;
+
 
     }
     for(int i=0;i<n;i++)
