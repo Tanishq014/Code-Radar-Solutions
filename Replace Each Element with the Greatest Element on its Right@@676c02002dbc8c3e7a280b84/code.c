@@ -9,10 +9,10 @@ int main()
         scanf("%d",&arr[i]);
     }
     for(int i=0;i<n;i++)
-    {   int maxx;
+    {   int maxx=arr[i+1];
         for(int j=i+1;j<n;j++)
         {
-            maxx=arr[i+1];
+            
             if(arr[j]>maxx){maxx=arr[j];}
         }
         if(i=n-1){arr[i]=-1;}
