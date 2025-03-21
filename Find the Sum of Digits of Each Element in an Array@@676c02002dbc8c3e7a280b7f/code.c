@@ -12,7 +12,7 @@ int main()
         scanf("%d",&temp);
         for(int j=0;temp!=0;j++)
         {
-            sum=temp%10;
+            sum+=temp%10;
             temp=temp/10;
         }arrn[i]=sum;
 
