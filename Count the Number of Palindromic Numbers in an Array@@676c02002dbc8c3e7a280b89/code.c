@@ -8,7 +8,7 @@ int ispal(int b)
         nw=(nw*10)+(a%10);
         a=a/10;
     }
-    if(nw==a){return 1;}
+    if(nw==b){return 1;}
     else{return 0;}
 }
 int main()
