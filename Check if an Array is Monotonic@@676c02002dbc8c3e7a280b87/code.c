@@ -9,7 +9,7 @@ int main()
         scanf("%d",&arr[i]);
     }
     int inc=0;
-    for(int i=0;i<n;i++)
+    for(int i=0;i<n-1;i++)
     {
         if(arr[i]==arr[i+1]){continue;}
         else if(arr[i]<arr[i+1]){inc=1;break;}
@@ -22,9 +22,8 @@ int main()
     {
         if(inc){if(arr[i]<arr[i+1]){continue;}else{iss=0;break;}}
         else if(!inc){if(arr[i]>arr[i+1]){continue;}else{iss=0;break;}}
-        else if(iss=2){printf("YES");break;}
+        else if(inc=2){printf("YES");break;}
     }
     if(iss){printf("YES");}
     else if(!iss){printf("NO");}
-    else if(iss==2){printf("YES");}
 }
