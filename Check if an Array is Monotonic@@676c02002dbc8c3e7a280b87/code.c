@@ -25,5 +25,5 @@ int main()
         else if(inc=2){printf("YES");iss=2;break;}
     }
     if(iss){printf("YES");}
-    else if(!iss){printf("NO");}
+    else if(iss==0){printf("NO");}
 }
