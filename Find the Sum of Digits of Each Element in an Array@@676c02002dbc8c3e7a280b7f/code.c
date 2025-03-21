@@ -8,8 +8,8 @@ int main()
     int arrn[n];
     for(int i=0;i<n;i++)
     {
-        int temp;
-        scanf("%d",&temp);
+        char temp;
+        scanf("%c",&temp);
         //scanf("%d",&arr[i]);
         int len=strlen(temp);
         int sum=0;
