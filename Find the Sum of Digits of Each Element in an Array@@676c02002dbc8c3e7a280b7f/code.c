@@ -14,7 +14,7 @@ int main()
         {
             sum+=temp%10;
             temp=temp/10;
-        }arrn[i]=sum;
+        }arrn[i]=sum;sum=0;
 
 
     }
