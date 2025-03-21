@@ -9,7 +9,7 @@ int main()
     for(int i=0;i<n;i++)
     {
         char temp[100];
-        scanf("%c",&temp);
+        scanf("%s",&temp);
         //scanf("%d",&arr[i]);
         int len=strlen(temp);
         int sum=0;
