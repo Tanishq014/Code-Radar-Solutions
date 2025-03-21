@@ -2,7 +2,7 @@
 #include <stdlib.h>
 int ispal(int a)
 {   int nw=0;
-    for(;a>0;)
+    for(int i=0;a>0;i++)
     {
         nw=(nw*10)+(a%10);
         a=a/10;
