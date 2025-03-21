@@ -2,7 +2,7 @@
 int main()
 {
     int n;
-    scanf("%d ",&n);
+    scanf("%d",&n);
     int arr[n];
     for(int i=0;i<n;i++)
     {
@@ -13,6 +13,7 @@ int main()
     {
         if(arr[i]%2==0 && arr[i]>=le){le=arr[i];iss=1;}
     }
-    printf("%d",le);
+    if(iss)
+    {printf("%d",le);}else{printf("-1");}
 
 }
