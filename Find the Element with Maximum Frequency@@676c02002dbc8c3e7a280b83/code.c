@@ -17,8 +17,5 @@ int main()
             if(arr[i]==arr[j]){count++;}
         }if(count>countm){countm=count;maxc=arr[i];}
     }
-    for(int i=0;i<countm;i++)
-    {
-        printf("%d",maxc);
-    }
+printf("%d",maxc);
 }
