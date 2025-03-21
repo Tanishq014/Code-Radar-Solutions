@@ -4,7 +4,7 @@ int main()
 {
     int n;
     scanf("%d",&n);
-    scanf("\n");
+    getchar();
     int arr[n];
     int arrn[n];
     for(int i=0;i<n;i++)
@@ -14,7 +14,7 @@ int main()
         //scanf("%d",&arr[i]);
         int len=strlen(temp);
         int sum=0;
-        for(int j=0;j<strlen;j++)
+        for(int j=0;j<len;j++)
         {
             sum+=temp[j];
         }
