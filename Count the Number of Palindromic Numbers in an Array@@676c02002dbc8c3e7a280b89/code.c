@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-int ispal(int a)
-{   int nw=0;
+int ispal(int b)
+{   int a=b;
+    int nw=0;
     for(int i=0;a>0;i++)
     {
         nw=(nw*10)+(a%10);
