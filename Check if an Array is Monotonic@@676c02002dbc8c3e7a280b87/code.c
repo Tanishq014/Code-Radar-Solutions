@@ -14,7 +14,7 @@ int main()
         if(arr[i]==arr[i+1]){continue;}
         else if(arr[i]<arr[i+1]){inc=1;break;}
         else if(arr[i]>arr[i+1]){inc=0;break;}
-        else if((arr[i]==arr[i+1])&&i=n-2){inc=2;break;}
+        else if((arr[i]==arr[i+1])&&i==n-2){inc=2;break;}
 
     }
     int iss=1;
