@@ -22,6 +22,6 @@ int main()
     }
     for(int l=0;l<n;l++)
     {
-        prinf("%d",arr[i]);
+        printf("%d",arr[l]);
     }
 }
