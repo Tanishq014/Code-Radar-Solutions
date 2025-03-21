@@ -8,7 +8,7 @@ int main()
     int arrn[n];
     for(int i=0;i<n;i++)
     {
-        char temp;
+        char temp[100];
         scanf("%c",&temp);
         //scanf("%d",&arr[i]);
         int len=strlen(temp);
