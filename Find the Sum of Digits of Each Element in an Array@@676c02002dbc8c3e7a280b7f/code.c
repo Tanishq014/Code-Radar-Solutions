@@ -13,7 +13,7 @@ int main()
         //scanf("%d",&arr[i]);
         int len=strlen(temp);
         int sum=0;
-        for(int j=0;j<n;j++)
+        for(int j=0;j<strlen;j++)
         {
             sum+=temp[j];
         }
