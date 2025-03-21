@@ -23,7 +23,7 @@ int main()
     int count=0;
     for(int i=0;i<n;i++)
     {
-        if(ispal(abs(arr[i]))){count++;}
+        if(ispal(arr[i])){count++;}
     }
     printf("%d",count);
     
