@@ -22,7 +22,7 @@ int main()
     {
         if(inc){if(arr[i]<arr[i+1]){continue;}else{iss=0;break;}}
         else if(!inc){if(arr[i]>arr[i+1]){continue;}else{iss=0;break;}}
-        else if(inc=2){printf("YES");break;}
+        else if(inc=2){printf("YES");iss=2;break;}
     }
     if(iss){printf("YES");}
     else if(!iss){printf("NO");}
