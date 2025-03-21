@@ -10,7 +10,7 @@ int main()
         int temp;
         scanf("%d",&temp);
         //scanf("%d",&arr[i]);
-        len=strlen(temp);
+        int len=strlen(temp);
         int sum=0;
         for(int j=0;j<n;j++)
         {
