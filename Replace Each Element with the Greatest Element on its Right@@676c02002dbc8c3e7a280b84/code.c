@@ -15,7 +15,7 @@ int main()
             
             if(arr[j]>maxx){maxx=arr[j];}
         }
-        if(i=n-1){arr[i]=-1;}
+        if(i==n-1){arr[i]=-1;}
         else{arr[i]=maxx;}
     }
     for(int i=0;i<n;i++)
