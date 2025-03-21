@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 int ispal(int a)
 {   int nw=0;
     for(;a>0;)
@@ -21,7 +22,7 @@ int main()
     int count=0;
     for(int i=0;i<n;i++)
     {
-        if(ispal(arr[i])){count++;}
+        if(ispal(abs(arr[i]))){count++;}
     }
     printf("%d",count);
     
