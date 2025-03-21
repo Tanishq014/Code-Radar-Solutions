@@ -4,8 +4,7 @@ int main()
 {
     int n;
     scanf("%d",&n);
-    getchar();
-    int arr[n];
+    
     int arrn[n];
     for(int i=0;i<n;i++)
     {
