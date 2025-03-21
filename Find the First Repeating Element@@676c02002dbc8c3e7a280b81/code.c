@@ -16,4 +16,5 @@ int main()
             if(arr[i]==arr[j]){printf("%d",arr[i]);break;}
         }
     }
+    if(!iss){printf("-1");}
 }
