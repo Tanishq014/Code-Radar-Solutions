@@ -8,7 +8,7 @@ int main()
     for(int i=0;i<n;i++)
     {
         int temp;
-        scanf("%d",&temp)
+        scanf("%d",&temp);
         //scanf("%d",&arr[i]);
         len=strlen(temp);
         int sum=0;
@@ -19,7 +19,7 @@ int main()
         arrn[i]=sum;
 
     }
-    for(i=0;i<n;i++)
+    for(int i=0;i<n;i++)
     {
         printf("%d",arrn[i]);
     }
