@@ -4,13 +4,13 @@ int main()
 {
     int n;
     scanf("%d",&n);
-    
+
     int arrn[n];
     for(int i=0;i<n;i++)
     {
         int temp,sum;
         scanf("%d",&temp);
-        for(i=0;temp!=0;i++)
+        for(int j=0;temp!=0;j++)
         {
             sum=temp%10;
             temp=temp/10;
