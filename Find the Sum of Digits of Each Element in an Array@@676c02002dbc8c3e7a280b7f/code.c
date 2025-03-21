@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include <maths.h>
+#include <math.h>
 int main()
 {
     int n;
