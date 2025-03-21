@@ -17,7 +17,7 @@ int main()
             {
                 count++;
             }
-        }if(count>maxc;){maxc=count;maxe=arr[i];}
+        }if(count>maxc){maxc=count;maxe=arr[i];}
     }
     printf("%d",maxe);
 
