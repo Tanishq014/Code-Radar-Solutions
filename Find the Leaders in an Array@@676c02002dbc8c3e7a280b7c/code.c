@@ -15,5 +15,6 @@ int main()
             if(!(arr[i]>=arr[j])){iss=0;break;}
         }if(iss){printf("%d",arr[i]);}
     }
+    printf("%d",arr[n]);
 
 }
