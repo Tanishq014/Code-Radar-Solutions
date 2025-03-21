@@ -2,7 +2,7 @@
 int isprime(int a)
 {
     if(a==1){return 0;}
-    else if(a==2){return 1;}
+    else if(a==2||a==0){return 1;}
     else{   int iss=1;
             for(int k=2;k<a;k++)
             {
