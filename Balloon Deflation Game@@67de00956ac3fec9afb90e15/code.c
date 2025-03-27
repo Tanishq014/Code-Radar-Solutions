@@ -4,7 +4,7 @@ int ifCont(int air[],int n)
     {
         if(air[i]!=0){notz++;}
     }
-    if(notz>0){printf("%d",notz);return 1;}
+    if(notz>0){return 1;}
     else{return 0;}
 }
 
@@ -23,5 +23,12 @@ void deflateBalloons(int air[],int n)
         {
             air[m]=air[m]-min;
         }
-    }}
+    }
+    int nott=0;
+    for(int i=0;i<n;i++)
+    {
+        if(air[i]!=0){nott++;}
+    }
+    if(nott>0){printf("%d",nott);}
+    }
 }
