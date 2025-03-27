@@ -20,7 +20,7 @@ void deflateBalloons(int air[],int n)
     {
         for(int m=0;m<n;m++)
         {
-            air[i]=air[i]-min;
+            air[m]=air[m]-min;
         }
     }}
 }
