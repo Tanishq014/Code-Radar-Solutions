@@ -1,5 +1,5 @@
 int ifCont(int air[],int n)
-{   notz=0;
+{   int notz=0;
     for(int i=0;i<n;i++)
     {
         if(air[i]!=0){notz++;}
@@ -8,7 +8,7 @@ int ifCont(int air[],int n)
     else{return 0;}
 }
 
-deflateBalloons(int air[],int n)
+void deflateBalloons(int air[],int n)
 {   
     for(int k=0;k<n;k++)
     {int min=air[0];
