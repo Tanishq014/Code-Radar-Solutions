@@ -21,7 +21,8 @@ void deflateBalloons(int air[],int n)
     //{
         for(int m=0;m<n;m++)
         {
-            air[m]=air[m]-min;
+            if(air[m]-min<0){air[m]=0;}
+            else{air[m]=air[m]-min;}
         }
     //}
     int nott=0;
