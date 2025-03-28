@@ -11,7 +11,7 @@ int ifCont(int air[],int n)
 void deflateBalloons(int air[],int n)
 {   while(ifCont(air,n))
     //for(int k=0;k<n;k++)
-    {int min=air[0];
+    {int min=765433434;
     for(int i=0;i<n;i++)
     {
         if((air[i]<min)&&(air[i]>0)){min=air[i];}
