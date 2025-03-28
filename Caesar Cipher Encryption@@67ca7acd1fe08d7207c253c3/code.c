@@ -5,7 +5,7 @@ void caesarCipher(char message[],int shift,char encrypted[])
     int last=a+26;
     int n=strlen(message);
     for(int i=0;i<n;i++)
-    {   if(isaplha(message[i]))
+    {   if(isalpha(message[i]))
     { 
               int k=(int)message[i];
               if(k+shift<=last){encrypted[i]=(char)(k+shift);}
