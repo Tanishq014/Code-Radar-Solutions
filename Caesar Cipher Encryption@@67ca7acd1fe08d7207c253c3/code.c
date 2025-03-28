@@ -1,8 +1,8 @@
 #include <string.h>
 #include <ctype.h>
 void caesarCipher(char message[],int shift,char encrypted[])
-{   shift = shift % 26;
-    if (shift < 0) shift += 26;
+{   //shift = shift % 26;
+    //if (shift < 0) shift += 26;
     int n=strlen(message);
     for(int i=0;i<n;i++)
     {   if(isalpha(message[i]))
