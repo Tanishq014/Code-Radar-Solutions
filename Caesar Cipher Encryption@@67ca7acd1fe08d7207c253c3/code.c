@@ -13,4 +13,11 @@ void caesarCipher(char message[],int shift,char encrypted[])
               else{encrypted[i]=(char)((k-last)+a);}
     }
     }
+    else {
+            // Fix 3: Handle non-alphabetic characters
+            encrypted[i] = message[i];
+        }
+    encrypted[n] = '\0';
+
+
 }
