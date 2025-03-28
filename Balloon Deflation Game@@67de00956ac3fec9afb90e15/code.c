@@ -9,7 +9,8 @@ int ifCont(int air[],int n)
 }
 
 void deflateBalloons(int air[],int n)
-{   while(ifCont(air,n))
+{   printf("%d\n",n);
+    while(ifCont(air,n))
     //for(int k=0;k<n;k++)
     {int min=765433434;
     for(int i=0;i<n;i++)
@@ -30,6 +31,6 @@ void deflateBalloons(int air[],int n)
     {
         if(air[o]!=0){nott++;}
     }
-    if(nott>0){printf("%d",nott);}
+    if(nott>0){printf("%d\n",nott);}
     }
 }
