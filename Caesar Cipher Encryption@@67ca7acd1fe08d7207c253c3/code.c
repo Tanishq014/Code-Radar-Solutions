@@ -1,3 +1,4 @@
+#include <string.h>
 void caesarCipher(char message[],int shift,char encrypted[])
 {   int a=(int)'a';
     int last=a+26;
