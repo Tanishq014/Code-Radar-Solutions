@@ -1,64 +1,48 @@
 #include <stdio.h>
 
-
-
-int bubbleSort(int arr[], int n)
-{
-        for(int i=0;i<n;i++)
-    {
-        for(int j=0;j<n-i-1;j++)
-        {
-            if (arr[j]>arr[j+1])
-            {
-                int t1;
-                t1=arr[j];
-                arr[j]=arr[j+1];
-                arr[j+1]=t1;
-            }        for(int k=0;k<n;k++)
-    {
-        printf("%d ",arr[k]);
-    }printf("\n");
-        }
-    }
-}
-
-void printArray(int arr[],int n)
-{
-        for(int k=0;k<n;k++)
-    {
-        printf("%d ",arr[k]);
-    }
-}
-
-/*int main()
-{
-    int n;
-    int T1;
-    scanf("%d",&n);
-    int arr[n];
-    for(int i=0;i<n;i++)
-    {
-        int temp;
-        scanf("%d",&temp);
-        arr[i]=temp;
-    }
-    for(int i=0;i<n;i++)
-    {
-        for(int j=0;j<n-i-1;j++)
-        {
-            if (arr[j]>arr[j+1])
-            {
-                int t1;
-                t1=arr[j];
-                arr[j]=arr[j+1];
-                arr[j+1]=t1;
+// Function to perform Bubble Sort
+void bubbleSort(int arr[], int n) {
+    for (int i = 0; i < n - 1; i++) { // Run (n-1) times
+        for (int j = 0; j < n - i - 1; j++) { // Last i elements are sorted
+            if (arr[j] > arr[j + 1]) { // Correct comparison
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
             }
         }
     }
+}
 
-    for(int k=0;k<n;k++)
-    {
-        printf("%d ",arr[k]);
+// Function to print the array
+void printArray(int arr[], int n) {
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n"); // Print newline correctly
+}
+
+// Main function
+int main() {
+    int n;
+    
+    // Taking input for array size
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    int arr[n]; // Declare array
+
+    // Input array elements
+    printf("Enter %d elements: ", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
 
-}*/
+    // Sorting the array
+    bubbleSort(arr, n);
+
+    // Printing the sorted array
+    printf("Sorted array: ");
+    printArray(arr, n);
+
+    return 0;
+}
