@@ -12,7 +12,7 @@ int main()
     {
         scanf("%d",&arr[i]);
     }
-    int mind=0,mini,minj;
+    int mind=984650,mini,minj;
     for(int i=0;i<n;i++)
     {
         for(int j=i;j<n;j++)
