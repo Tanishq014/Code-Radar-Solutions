@@ -17,7 +17,7 @@ int main()
     {
         for(int j=i+1;j<n;j++)
         {
-            if(abs(arr[i]-arr[j])<mind){mind=abs(arr[i]-arr[j]);mini=arr[i];minj=arr[j];}
+            if(abs(arr[i]-arr[j])<=mind){mind=abs(arr[i]-arr[j]);mini=arr[i];minj=arr[j];}
         }
     }    if(mini<minj){printf("%d %d",mini,minj);}
     else{printf("%d %d",minj,mini);}
