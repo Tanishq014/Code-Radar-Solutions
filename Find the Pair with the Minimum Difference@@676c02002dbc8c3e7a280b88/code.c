@@ -10,7 +10,7 @@ int main()
     int arr[n];
     for(int i=0;i<n;i++)
     {
-        scanf("%d",&arr[i];)
+        scanf("%d",&arr[i]);
     }
     int mind=0,mini,minj;
     for(int i=0;i<n;i++)
