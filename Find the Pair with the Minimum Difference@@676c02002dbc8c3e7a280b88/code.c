@@ -15,7 +15,7 @@ int main()
     int mind=984650,mini,minj;
     for(int i=0;i<n;i++)
     {
-        for(int j=i;j<n;j++)
+        for(int j=i+1;j<n;j++)
         {
             if(abs(arr[i]-arr[j])<mind){mind=abs(arr[i]-arr[j]);mini=i;minj=j;}
         }
