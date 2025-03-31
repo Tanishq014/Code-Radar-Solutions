@@ -4,10 +4,8 @@ int binarySearch(int arr[],int n,int t)
     while(low<=high)
     {   mid = low + (high - low) / 2;
         if(arr[mid]==t){return mid;}
-        else
-        {
-            if(t<arr[mid]){ high=mid-1; }
-            else{low=mid+1;}
-        }
+        else if(t<arr[mid]){ high=mid-1; }
+        else{low=mid+1;}
+        
     }
 }
