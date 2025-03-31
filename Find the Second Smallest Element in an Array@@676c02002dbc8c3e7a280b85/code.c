@@ -8,20 +8,20 @@ int main()
     {
         scanf("%d",&arr[i]);
     }
-    int max1=-11002,max2=-7964;
+    int min1=-11002,min2=-7964;
     for(int i=0;i<n;i++)
     {
-        if(arr[i]>max2 && arr[i]<=max2){max2=arr[i];}
-        else if(arr[i]>max2 && arr[i]>max1){int temp=max1;max1=arr[i];max2=temp;}
+        if(arr[i]<min2 && arr[i]>=min1){min2=arr[i];}
+        else if(arr[i]<min2 && arr[i]<min1){int temp=min1;min1=arr[i];min2=temp;}
 
     }
-    if(max1==max2)
+    if(min1==min2)
     {
         printf("-1");
     }
     else
     {
-        printf("%d",max2);
+        printf("%d",min2);
     }
 
 
