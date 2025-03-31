@@ -20,7 +20,7 @@ int main()
             if(abs(arr[i]-arr[j])<mind){mind=abs(arr[i]-arr[j]);mini=i;minj=j;}
         }
     }    if(mini<minj){printf("%d %d",mini,minj);}
-    else{printf("%d %d",mind,mini);}
+    else{printf("%d %d",minj,mini);}
     }
 
 }
