@@ -8,7 +8,7 @@ int main()
     for(int i=0;i<n;i++)
     {
         if(arr[i]>max2 && arr[i]<=max2){max2=arr[i];}
-        else if(arr[i]>max2 && arr[i]>max1){temp=max1;max1=arr[i];max2=temp;}
+        else if(arr[i]>max2 && arr[i]>max1){int temp=max1;max1=arr[i];max2=temp;}
 
     }
     if(max1==max2)
