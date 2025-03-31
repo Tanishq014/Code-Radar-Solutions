@@ -1,8 +1,8 @@
 int binarySearch(int arr[],int n,int t)
 {
-    int high=n-1,low=0,mid=n/2;
+    int high=n-1,low=0,mid;
     while(low<=high)
-    {
+    {   mid=low+(high+1-low)/2;
         if(arr[mid]==t){return mid;}
         else
         {
