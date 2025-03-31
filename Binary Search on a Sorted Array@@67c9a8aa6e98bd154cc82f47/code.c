@@ -1,17 +1,26 @@
-int binarySearch(int arr[], int n, int t) {
-    int high = n - 1, low = 0, mid;
-    
-    while (low <= high) {
-        mid = (high + low) / 2;  // Correct mid calculation
+#include <stdio.h>
 
-        if (arr[mid] == t) 
-            return mid;  // Target found
+// Function to perform binary search
+int binarySearch(int arr[], int n, int target) {
+    int left = 0, right = n - 1;
 
-        if (t < arr[mid]) 
-            high = mid - 1;  // Search left half
-        else 
-            low = mid + 1;  // Search right half
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+
+        // Check if the target is at mid
+        if (arr[mid] == target) {
+            return mid; // Return the index of the target
+        }
+
+        // If target is greater, ignore the left half
+        if (arr[mid] < target) {
+            left = mid + 1;
+        }
+        // If target is smaller, ignore the right half
+        else {
+            right = mid - 1;
+        }
     }
 
-    return -1;  // Target not found
+    return -1; // Target not found
 }
