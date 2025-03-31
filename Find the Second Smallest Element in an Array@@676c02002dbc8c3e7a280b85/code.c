@@ -8,7 +8,7 @@ int main()
     {
         scanf("%d",&arr[i]);
     }
-    int min1=-11002,min2=-7964;
+    int min1=11002,min2=7964;
     for(int i=0;i<n;i++)
     {
         if(arr[i]<min2 && arr[i]>=min1){min2=arr[i];}
