@@ -1,7 +1,9 @@
 #include <stdio.h>
 int kthSmallest(int arr[],int n,int k)
 {
-    for(int i=0;i<n;i++)
+    if(k>n){printf("-1");}
+    else
+    {for(int i=0;i<n;i++)
     {
         for(int j=0;j<n-1-i;j++)
         {
@@ -14,4 +16,4 @@ int kthSmallest(int arr[],int n,int k)
         }
     }return (arr[k-1]);
 
-}
+}}
