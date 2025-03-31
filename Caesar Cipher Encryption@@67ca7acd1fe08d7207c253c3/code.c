@@ -10,7 +10,7 @@ void caesarCipher(char message[],int shift,char encrypted[])
         int last=a+26;
               int k=(int)message[i];
               if(k+shift<=last){encrypted[i]=(char)(k+shift);}
-              else{encrypted[i]=(char)((k-last)+a);}
+              else{encrypted[i]=(char)((k+shift-last)+a);}
     }
     else {
             // Fix 3: Handle non-alphabetic characters
