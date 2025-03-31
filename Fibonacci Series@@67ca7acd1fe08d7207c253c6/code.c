@@ -1,4 +1,4 @@
-fibonacciSeries(n)
+int fibonacciSeries(n)
 {
     if(n==1){printf("0");}
     else if(n==2){printf("0 1");}
@@ -12,7 +12,7 @@ fibonacciSeries(n)
         }
         for(int i=0;i<n;i++)
         {
-            printf("%d",arr[i]);
+            printf("%d ",arr[i]);
         }
     }
     
