@@ -1,6 +1,6 @@
 int factorial(int j)
 {
-    return j*factorial(j-1);
+   while(j>0) return j*factorial(j-1);
 }
 
 
