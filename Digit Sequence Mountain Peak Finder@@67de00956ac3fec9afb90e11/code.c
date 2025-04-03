@@ -25,7 +25,7 @@ int mountainPeak(int n)
     {
         
         l--;
-    }l++;
+    }//l++;
     if(l==i)
     {
         return s[l];
