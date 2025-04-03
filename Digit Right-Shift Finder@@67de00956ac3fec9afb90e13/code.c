@@ -10,7 +10,7 @@ int digitRightShift(int n)
         count*=10;
         n/=10;
     }
-    out+=(count*10)*j;
+    out+=(count)*j;
     return out;
     
 }
