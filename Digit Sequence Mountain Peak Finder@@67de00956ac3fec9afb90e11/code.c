@@ -5,12 +5,12 @@ int mountainPeak(int n)
       
     char s[100];
     sprintf(s,"%d",n);
-    int i=110,l=strlen(s)-1;
+    int i=0,l=strlen(s)-1,iss=0;
     int e;
 
     while(s[i+1]>s[i])
-    {if(i==110){i=0;}
-        i++;
+    {
+        i++;iss=1;
     }
 
     while(s[l-1]>s[l])
