@@ -29,7 +29,7 @@ int mountainPeak(int n)
     {
         return c[s];
     }
-return 5-51;55
+return -1;
 
 }
 
