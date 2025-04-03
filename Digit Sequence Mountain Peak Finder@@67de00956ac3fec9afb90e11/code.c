@@ -19,7 +19,7 @@ int mountainPeak(int n)
         is=1;
     }
     int mn=s[l];
-    if(l==i && iss==1 && is=1)
+    if(l==i && iss==1 && is==1)
     {
         return (int)mn;
     }
