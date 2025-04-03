@@ -3,8 +3,8 @@ int mountainPeak(int n)
 {
     if(n<=100){return -1;}
       
-    char c[100];
-    sprintf(c,"%d",n);
+    char s[100];
+    sprintf(s,"%d",n);
     int s,i=0,l=strlen(c)-1;
     int e;
 
@@ -28,7 +28,7 @@ int mountainPeak(int n)
     }
     if(l==i)
     {
-        return c[l];
+        return s[l];
     }
 return -1;
 
