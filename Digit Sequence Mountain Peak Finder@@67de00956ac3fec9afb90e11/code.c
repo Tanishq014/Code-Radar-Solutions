@@ -15,7 +15,7 @@ int mountainPeak(int n)
         //s=i;
         i++;
 
-    }
+    }i--;
     
 
 
