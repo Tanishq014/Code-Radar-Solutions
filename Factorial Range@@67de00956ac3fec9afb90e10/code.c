@@ -9,9 +9,9 @@ int factorial(int j)
 
 
 void factorialRange(int n,int k)
-{   if(n<0||k<0)return "Invalid range";
+{   if(n<0||k<0) printf("Invalid range");return;
     for(int i=n;i<=k;i++)
     {
         printf("%d\n",factorial(i));
-    }
+    }return;
 }
