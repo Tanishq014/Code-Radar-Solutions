@@ -21,7 +21,7 @@ int mountainPeak(int n)
 
 //for(int i=strlen(c)-1;c[i]!='\0';i++)
 
-    while(s[l-1]<s[l])
+    while(s[l-1]>s[l])
     {
         
         l--;
