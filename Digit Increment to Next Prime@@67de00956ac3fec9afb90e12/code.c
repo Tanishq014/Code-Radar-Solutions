@@ -6,8 +6,8 @@ int change(int n)
     //else if (n==2||n==4||n==6||)
 }
 int incrementToPrimeDigits(int n)
-{   int n;
-    scanf("%d",&n);int out=0;
+{   
+    int out=0;
     int count=1;
     for(int i=0;n>0;i++)
     {
