@@ -13,7 +13,7 @@ int main()
     {
         int j=n%10;
         out=out+(change(j)*count*10);
-        count++
+        count++;
     }
     printf("%d",out);
     
