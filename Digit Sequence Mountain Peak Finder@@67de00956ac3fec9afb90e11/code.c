@@ -20,7 +20,7 @@ int mountainPeak(int n)
 
     if(l==i)
     {
-        return s[l];
+        return (int)s[l];
     }
 
     //printf("%d %d",l,i);
