@@ -18,12 +18,12 @@ int mountainPeak(int n)
         l--;
     }
 
-    /*if(l==i)
+    if(l==i)
     {
         return s[l];
-    }*/
+    }
 
-    printf("%d %d",l,i);
+    //printf("%d %d",l,i);
     return -1;
 
 }
