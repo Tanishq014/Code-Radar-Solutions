@@ -5,7 +5,7 @@ int factorial(int j)
 }
 
 void factorialRange(int n,int k)
-{   if(n<0||k<0||k>n) {printf("Invalid range");return;}
+{   if(n<0||k<0||n>k) {printf("Invalid range");return;}
     for(int i=n;i<=k;i++)
     {
         printf("%d\n",factorial(i));
