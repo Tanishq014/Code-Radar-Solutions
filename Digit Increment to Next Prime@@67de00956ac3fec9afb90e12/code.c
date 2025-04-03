@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-int change(int k)
+int change(int n)
 {
     if(n==0||n==1||n==8||n==9){return 2;}
-    else if (n==2||n==4||n==6||)
+    //else if (n==2||n==4||n==6||)
 }
 int main()
 {   int n;
