@@ -5,7 +5,7 @@ int mountainPeak(int n)
       
     char s[100];
     sprintf(s,"%d",n);
-    int i=0,l=strlen(c)-1;
+    int i=0,l=strlen(s)-1;
     int e;
 
 //for(int i=0;c[i]!='\0';i++)
