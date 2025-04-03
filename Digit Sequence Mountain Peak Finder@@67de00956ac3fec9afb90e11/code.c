@@ -1,3 +1,4 @@
+#include <string.h>
 int mountainPeak(int n)
 {
     if(n<=100){return -1;}
@@ -36,4 +37,3 @@ return -1;
 
 
 
-}
