@@ -8,30 +8,23 @@ int mountainPeak(int n)
     int i=0,l=strlen(s)-1;
     int e;
 
-//for(int i=0;c[i]!='\0';i++)
-
     while(s[i+1]>s[i])
     {
-        //s=i;
         i++;
-
     }
-    
-
-
-//for(int i=strlen(c)-1;c[i]!='\0';i++)
 
     while(s[l-1]>s[l])
     {
-        
         l--;
-    }//l++;
-    if(l==i)
+    }
+
+    /*if(l==i)
     {
         return s[l];
-    }
+    }*/
+
     printf("%d %d",l,i);
-return -1;
+    return -1;
 
 }
 
