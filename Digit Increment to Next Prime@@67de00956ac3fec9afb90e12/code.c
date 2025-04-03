@@ -12,6 +12,7 @@ int incrementToPrimeDigits(int n)
 {   
     int out=0;
     int count=1;
+    if(n==0){return 2;}
     for(int i=0;n>0;i++)
     {
         int j=n%10;
