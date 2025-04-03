@@ -30,6 +30,7 @@ int mountainPeak(int n)
     {
         return s[l];
     }
+    printf("%d %d",l,i);
 return -1;
 
 }
