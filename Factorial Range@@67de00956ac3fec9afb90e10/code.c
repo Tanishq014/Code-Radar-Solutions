@@ -1,7 +1,7 @@
 int factorial(int j)
 {
    if(j==0 || j==1){return 1;}
-   return j*factorial(j-1);
+   while(j>=1)return j*factorial(j-1);
 }
 
 
