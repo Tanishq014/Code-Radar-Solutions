@@ -4,7 +4,7 @@ int totalLikes(int n)
     for(int i=0;i<n;i++)
     {
         sum+=in/2;
-        t=in/2;
+        int t=in/2;
         in=t*3;
     }
     return sum;
