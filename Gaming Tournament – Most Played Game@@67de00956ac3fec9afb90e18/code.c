@@ -10,11 +10,11 @@ int mostPlayedGame(int games[],int n)
         }
         freq[i]=count;
     }
-    int max=freq[i];
+    int max=0;
     for(int i=0;i<n;i++)
     {
-        if(freq[i]==max){return -1;}
-        if(freq[i]>max){max=freq[i];}
+        if(freq[i]==freq[max]){max=games[i]>games[max]?:max=i;}
+        if(freq[i]>freq[max]){max=i;}
     }
     return max;
 
