@@ -1,0 +1,4 @@
+prankFriend(int n,int m,int s)
+{
+    return (s+m)%n-1;
+}
