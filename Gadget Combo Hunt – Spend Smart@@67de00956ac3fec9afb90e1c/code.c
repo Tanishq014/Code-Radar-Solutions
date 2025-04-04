@@ -1,4 +1,4 @@
-maxGadgetSpend(int key[],int n,int head[],int m,int budget)
+int maxGadgetSpend(int key[],int n,int head[],int m,int budget)
 {   
     int max=0;
     int iss=0;
