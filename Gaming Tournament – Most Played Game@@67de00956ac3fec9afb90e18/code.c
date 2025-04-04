@@ -1,6 +1,6 @@
 int mostPlayedGame(int games[],int n)
 {
-    int freq[n]={0};
+    int freq[100]={0};
     for(int i=0;i<n;i++)
     {   if(freq[i]==-1){continue;}
         int count=1;
@@ -16,6 +16,6 @@ int mostPlayedGame(int games[],int n)
         if(freq[i]==freq[max]){max=games[i]>games[max]?:max=i;}
         if(freq[i]>freq[max]){max=i;}
     }
-    return max;
+    return games[max];
 
 }
