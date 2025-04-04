@@ -1,15 +1,20 @@
-int maxGadgetSpend(int key[],int n,int head[],int m,int budget)
-{   
-    int max=0;
-    int iss=0;
-    for(int i=0;i<n;i++)
-    {
-        for(int j=0;j<m;j++)
-        {
-            int k=key[i]+head[j];
-            if(k>max&&k<budget){max=key[i]+head[j];iss=1;}
+int maxGadgetSpend(int key[], int n, int head[], int m, int budget) {   
+    int max = 0;
+    int found = 0; // Variable to track if a valid combination is found
+
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            int sum = key[i] + head[j]; // Calculate the sum once
+            if (sum > max && sum < budget) {
+                max = sum;
+                found = 1; // Mark that a valid combination was found
+            }
         }
     }
-    if(iss==0){return -1;}
-    else{return max;}
+
+    if (found == 0) {
+        return -1; // No valid combination found
+    } else {
+        return max; // Return the maximum valid spend
+    }
 }
