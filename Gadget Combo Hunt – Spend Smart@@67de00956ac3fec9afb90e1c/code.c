@@ -10,6 +10,6 @@ int maxGadgetSpend(int key[],int n,int head[],int m,int budget)
             if(k>max&&k<budget){max=key[i]+head[j];iss=1;}
         }
     }
-    if(iss=0){return -1;}
+    if(iss==0){return -1;}
     else{return max;}
 }
