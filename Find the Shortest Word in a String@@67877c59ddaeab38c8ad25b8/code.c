@@ -10,7 +10,7 @@ int main()
     for(int i=0;i<strlen(c);i++)
     {
         count++;
-        if(c[i]==' '){if(count-1>max){max=count-1;end=i;count=0;}}
+        if(c[i]==' '||i==strlen(c)-1){if(count-1>max){max=count-1;end=i;count=0;}}
     }
     for(int i=end-max;i<end;i++)
     {
