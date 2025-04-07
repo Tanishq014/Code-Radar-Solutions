@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <string.h>
-#include <ctype.h>
 int main()
 {   char c[100];
     scanf("%[^\n]",c);
-    int count=1;int maxl=0;int maxi=0,maxe=0;
+    int count=1;int maxl=1;int maxi=0,maxe=1;
     while(count<strlen(c))
     {   
         
