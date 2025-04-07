@@ -9,7 +9,7 @@ int main()
         
         for(int i=0;i<=strlen(c)-count-1;i++)
         {   int iss=1;int k=i+count;
-            for(int j=0;j<(k-i)/2;j++)
+            for(int j=0;j<=(k-i)/2;j++)
             {
                 if(c[i+j]!=c[k-j]){iss=0;break;}
             }
