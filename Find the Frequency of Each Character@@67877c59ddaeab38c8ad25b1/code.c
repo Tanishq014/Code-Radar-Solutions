@@ -9,7 +9,7 @@ int main()
         for(int j=0;j<strlen(str);j++)
         {
             if(str[i]==str[j]){count++;freq[str[i]]=-1;}
-        }}
-        printf("%c: "str[i]);printf("%d\n",count);
+        }printf("%c: "str[i]);printf("%d\n",count);}
+        
     }
 }
