@@ -16,7 +16,7 @@ int main()
             }
             if(iss){maxl=count+1;maxi=i;maxe=k;}
 
-        }
+        }count++;
     }
     for(int i=maxi;i<=maxe;i++)
     {
