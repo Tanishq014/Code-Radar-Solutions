@@ -4,7 +4,7 @@
 int main()
 {
     char s[100];
-    scanf("%[^/n]",&s);
+    scanf("%[^\n]",&s);
     int len=strlen(s);
     for(int i=0;i<len;i++)
     {   char c=tolower(s[i]);
