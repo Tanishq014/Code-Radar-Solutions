@@ -28,6 +28,6 @@ int main() {
         }
     }
 
-    printf("Number of distinct substrings: %d\n", count);
+    printf("%d\n", count);
     return 0;
 }
