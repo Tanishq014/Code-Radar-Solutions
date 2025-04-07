@@ -6,12 +6,12 @@ int main()
     char c[100];
     scanf("%[^\n]",c);
     scanf("\n");
-    char k;
-    scanf("%c",&k);
+    char l;
+    scanf("%c",&l);
     for(int i=0;i<strlen(c);i++)
     {   k=tolower(c[i]);
         if(k=='a'||k=='e'||k=='i'||k=='o'||k=='u')
-        {printf("%c",c[i]);}
+        {printf("%c",l);}
         else{printf("%c",c[i]);}
     }
 }
