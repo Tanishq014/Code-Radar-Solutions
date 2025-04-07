@@ -13,7 +13,7 @@ int main()
         if(c[i]==' '||c[i]=='\0'){if(count<max){max=count;end=i-1;count=0;}}
         else{count++;}
     }
-    for(int i=end-max;i<=end;i++)
+    for(int i=end-max+1;i<=end;i++)
     {
         printf("%c",c[i]);
     }
