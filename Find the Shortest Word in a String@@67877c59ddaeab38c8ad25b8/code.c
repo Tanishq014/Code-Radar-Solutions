@@ -5,7 +5,7 @@ int main()
 {
     char c[100];
     scanf("%[^\n]",c);
-    int max=0;
+    int max=15454;
     int count=0;int end=0;
     for(int i=0;i<strlen(c);i++)
     {
