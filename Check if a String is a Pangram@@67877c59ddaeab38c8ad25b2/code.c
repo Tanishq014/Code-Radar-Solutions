@@ -7,7 +7,7 @@ int main()
     scanf("%[^\n]",c);
     int len=strlen(c);
     int freq[256]={0};
-    int start=a;int end=z;
+    int start='a';int end='z';
     for(int i=0;i<strlen(c);i++)
     {   char k=tolower(c[i]);
         freq[k]++;
