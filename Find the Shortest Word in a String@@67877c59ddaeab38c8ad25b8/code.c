@@ -4,17 +4,29 @@
 int main()
 {
     char c[100];
-    scanf("%[^\n]",c);
-    int max=15454;
-    int count=0;int end=0;
-    for(int i=0;i<strlen(c);i++)
+    scanf("%[^\n]", c);
+    int minLen = 1e9;
+    int count = 0, end = -1;
+    int len = strlen(c);
+
+    for (int i = 0; i <= len; i++) // include null terminator
     {
-        
-        if(c[i]==' '||i==strlen(c)-1){if(count<max){max=count;end=i;count=0;}}
-        else{count++;}
+        if (c[i] == ' ' || c[i] == '\0') {
+            if (count < minLen && count > 0) {
+                minLen = count;
+                end = i - 1; // end index of the shortest word
+            }
+            count = 0;
+        } else {
+            count++;
+        }
     }
-    for(int i=end-max;i<=end;i++)
-    {
-        printf("%c",c[i]);
+
+    if (end != -1) {
+        for (int i = end - minLen + 1; i <= end; i++) {
+            printf("%c", c[i]);
+        }
     }
+
+    return 0;
 }
