@@ -9,7 +9,7 @@ int main()
     int count=0;int end=0;
     for(int i=0;i<strlen(c);i++)
     {
-        int count++;
+        count++;
         if(c[i]==' '){if(count-1>max){max=count;end=i;count=0;}}
     }
     for(int i=end-max;i<end;i++)
