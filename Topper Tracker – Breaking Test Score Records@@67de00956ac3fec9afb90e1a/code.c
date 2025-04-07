@@ -6,5 +6,6 @@ result[0]=0;result[1]=0;
         if(scores[i]>max){result[0]++;max=scores[i];}
         else if(scores[i]<low){result[1]++;low=scores[i];}
     }
+    result[1]--;
     
 }
