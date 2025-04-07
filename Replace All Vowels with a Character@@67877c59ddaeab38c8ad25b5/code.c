@@ -11,6 +11,6 @@ int main()
     {
         if(c[i]=='a'||c[i]=='e'||c[i]=='i'||c[i]=='o'||c[i]=='u')
         {printf("%c",k);}
-        else{printf("%c".c[i]);}
+        else{printf("%c",c[i]);}
     }
 }
