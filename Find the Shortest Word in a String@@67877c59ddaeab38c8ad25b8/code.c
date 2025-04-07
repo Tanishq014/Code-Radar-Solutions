@@ -12,7 +12,7 @@ int main()
         count++;
         if(c[i]==' '||i==strlen(c)-1){if(count-1>max){max=count-1;end=i;count=0;}}
     }
-    for(int i=end-max;i<end;i++)
+    for(int i=end-max;i<=end;i++)
     {
         printf("%c",c[i]);
     }
