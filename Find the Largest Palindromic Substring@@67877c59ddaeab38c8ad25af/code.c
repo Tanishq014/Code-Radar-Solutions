@@ -17,7 +17,7 @@ int main()
 
         }count++;
     }
-    for(int i=maxi;i<=maxl+maxi;i++)
+    for(int i=maxi;i<maxl+maxi;i++)
     {
         printf("%c",c[i]);
     }
