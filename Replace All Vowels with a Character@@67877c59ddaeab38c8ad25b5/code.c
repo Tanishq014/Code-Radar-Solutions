@@ -11,7 +11,7 @@ int main()
     for(int i=0;i<strlen(c);i++)
     {   k=tolower(c[i]);
         if(k=='a'||k=='e'||k=='i'||k=='o'||k=='u')
-        {printf("%c",k);}
+        {printf("%c",c[i]);}
         else{printf("%c",c[i]);}
     }
 }
