@@ -3,7 +3,7 @@
 #include <ctype.h>
 int main()
 {   char c[100];
-    scanf("%[^\n]",&c);
+    scanf("%[^\n]",c);
     int count=1;int maxl=0;int maxi=0,maxe=0;
     while(count<strlen(c))
     {   
