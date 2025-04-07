@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 int main()
 {
     char c[100];
@@ -8,8 +9,8 @@ int main()
     char k;
     scanf("%c",&k);
     for(int i=0;i<strlen(c);i++)
-    {
-        if(c[i]=='a'||c[i]=='e'||c[i]=='i'||c[i]=='o'||c[i]=='u')
+    {   k=tolower(c[i]);
+        if(k=='a'||k=='e'||k=='i'||k=='o'||k=='u')
         {printf("%c",k);}
         else{printf("%c",c[i]);}
     }
