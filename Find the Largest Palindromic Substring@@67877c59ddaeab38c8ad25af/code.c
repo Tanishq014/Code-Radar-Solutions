@@ -12,7 +12,7 @@ int main()
         {   int iss=1;int k=i+count;
             for(int j=0;j<(k-i)/2;j++)
             {
-                if(c[i]!=c[k]){iss=0;break;}
+                if(c[i+j]!=c[k-j]){iss=0;break;}
             }
             if(iss&&count+1>maxl){maxl=count+1;maxi=i;maxe=k;}
 
