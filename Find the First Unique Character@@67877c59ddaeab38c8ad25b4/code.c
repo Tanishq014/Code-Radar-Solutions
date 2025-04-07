@@ -8,7 +8,7 @@ int main()
     int len=strlen(c);
     for(int i=0;i<len;i++)
     {int count=0;
-        for(int j=i+1;i<len;j++)
+        for(int j=i+1;j<len;j++)
         {
             if(c[i]==c[j]){count++;}
         }
