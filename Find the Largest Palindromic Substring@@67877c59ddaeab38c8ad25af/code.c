@@ -14,7 +14,7 @@ int main()
             {
                 if(c[i]!=c[k]){iss=0;break;}
             }
-            if(iss){maxl=count+1;maxi=i;maxe=k;}
+            if(iss&&count+1>maxl){maxl=count+1;maxi=i;maxe=k;}
 
         }count++;
     }
