@@ -3,7 +3,7 @@
 int main()
 {   char c[100];
     scanf("%[^\n]",c);
-    int count=1;int maxl=1;int maxi=0,maxe=1;
+    int count=1;int maxl=1;int maxi=0;
     while(count<strlen(c))
     {   
         
@@ -13,11 +13,11 @@ int main()
             {
                 if(c[i+j]!=c[k-j]){iss=0;break;}
             }
-            if(iss&&count+1>maxl){maxl=count+1;maxi=i;maxe=k;}
+            if(iss&&count+1>maxl){maxl=count+1;maxi=i;}
 
         }count++;
     }
-    for(int i=maxi;i<=maxe;i++)
+    for(int i=maxi;i<=maxl+maxi;i++)
     {
         printf("%c",c[i]);
     }
