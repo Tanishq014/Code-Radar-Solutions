@@ -1,4 +1,4 @@
-#include <sstdio.h>
+#include <stdio.h>
 #include <string.h>
 int main()
 {   int freq[256]={0};
