@@ -7,7 +7,7 @@ int main()
     scanf("%[^\n]",c);
     int max=15454;
     int count=0;int end=0;
-    for(int i=0;i<strlen(c);i++)
+    for(int i=0;i<=strlen(c);i++)
     {
         
         if(c[i]==' '||c[i]=='\0'){if(count<max){max=count;end=i-1;count=0;}}
