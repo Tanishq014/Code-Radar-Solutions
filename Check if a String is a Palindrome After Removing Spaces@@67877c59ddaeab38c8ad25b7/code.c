@@ -17,7 +17,7 @@ int main()
     int iss=1;
     for(int j=0;j<(l/2)-1;j++)
     {
-        if(s[j]!=s[l-j]){iss=0;break;}
+        if(s[j]!=s[l-j-1]){iss=0;break;}
     }
     if(iss){printf("Yes");}
     else{printf("No");}
