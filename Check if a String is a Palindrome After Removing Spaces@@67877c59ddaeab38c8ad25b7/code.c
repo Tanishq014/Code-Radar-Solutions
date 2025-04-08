@@ -11,6 +11,7 @@ int main()
         if(c[i]==' '){count++;}
         else{s[i-count]=c[i];}
     }
+    s[i-count+1]='\0';
     int l=strlen(s);
     for(int i=0;i<l;i++)
     {
