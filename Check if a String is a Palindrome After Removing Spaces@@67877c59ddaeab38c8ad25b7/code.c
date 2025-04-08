@@ -6,7 +6,7 @@ int main()
     scanf("%[^\n]",c);
     char s[100];
     int count=0;
-    int i
+    int i;
     for(i=0;i<strlen(c);i++)
     {
         if(c[i]==' '){count++;}
