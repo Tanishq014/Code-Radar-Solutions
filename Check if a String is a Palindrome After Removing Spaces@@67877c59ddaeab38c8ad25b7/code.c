@@ -12,7 +12,7 @@ int main()
         if(c[i]==' '){count++;}
         else{s[i-count]=c[i];}
     }
-    s[i-count+1]='\0';
+    s[i-count]='\0';
     int l=strlen(s);
     for(int j=0;j<l;j++)
     {
