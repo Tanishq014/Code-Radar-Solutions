@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 int main()
 {
     char c[100];
@@ -16,8 +17,8 @@ int main()
     int l=strlen(s);
     int iss=1;
     for(int j=0;j<(l/2);j++)
-    {
-        if(s[j]!=s[l-j-1]){iss=0;break;}
+    {   
+        if(tolower(s[j])!=tolower(s[l-j-1])){iss=0;break;}
     }
     if(iss){printf("Yes");}
     else{printf("No");}
