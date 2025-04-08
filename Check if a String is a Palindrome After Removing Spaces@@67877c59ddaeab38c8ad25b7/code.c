@@ -9,7 +9,7 @@ int main()
     for(int i=0;i<strlen(c);i++)
     {
         if(c[i]==' '){count++;}
-        else{s[i]=c[i-count];}
+        else{s[i-count]=c[i];}
     }
     int l=strlen(s);
     for(int i=0;i<l;i++)
