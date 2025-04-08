@@ -15,7 +15,7 @@ int main()
     s[i-count]='\0';
     int l=strlen(s);
     int iss=1;
-    for(int j=0;j<l/2;j++)
+    for(int j=0;j<(l/2)-1;j++)
     {
         if(s[j]!=s[l-j]){iss=0;break;}
     }
