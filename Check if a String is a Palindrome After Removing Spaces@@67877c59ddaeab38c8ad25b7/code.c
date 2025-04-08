@@ -19,6 +19,6 @@ int main()
     {
         if(s[j]!=s[l-j]){iss=0;break;}
     }
-    if(iss){printf("Yes")}
+    if(iss){printf("Yes");}
     else{printf("No");}
 }
