@@ -11,7 +11,7 @@ void compressString(char str[],char compressed[])
         {count++;}
         else
         {
-            if( count>1 ){compressed[++n]=str[i];compressed[++n]=count+'0';count=1;}
+            if( count>2 ){compressed[++n]=str[i];compressed[++n]=count+'0';count=1;}
             else{compressed[++n]=str[i];count=1;}
         }
     }
