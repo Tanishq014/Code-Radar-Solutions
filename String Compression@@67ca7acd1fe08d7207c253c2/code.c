@@ -32,13 +32,3 @@ void compressString(char *str, char *compressed) {
     }
 }
 
-int main() {
-    char input[] = "abbbbbbbbb";
-    char compressed[100]; // Ensure enough space for compression
-
-    compressString(input, compressed);
-
-    printf("Compressed String: %s\n", compressed); // Should print "ab8"
-
-    return 0;
-}
