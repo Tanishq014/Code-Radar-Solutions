@@ -8,7 +8,7 @@ void compressString(char str[],char compressed[])
     for(int i=0;i<len;i++)
     {
         if( str[i]==str[i+1] )
-        {count++;}
+        {if(str[i+2]==str[i+1]){count++;}else{compressed[++n]=str[i];count=1;}}
         else
         {
             if( count>2 ){compressed[++n]=str[i];compressed[++n]=count+'0';count=1;}
