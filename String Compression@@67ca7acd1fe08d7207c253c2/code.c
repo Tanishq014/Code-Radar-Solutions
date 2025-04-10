@@ -15,9 +15,13 @@ void compressString(char *str, char *compressed) {
             i++;
         }
 
-        // Append the character and its count to the compressed string
+        // Append the character to the compressed string
         compressed[compressedIndex++] = currentChar;
-        compressedIndex += sprintf(&compressed[compressedIndex], "%d", count);
+
+        // Append the count only if it is greater than 1
+        if (count > 1) {
+            compressedIndex += sprintf(&compressed[compressedIndex], "%d", count);
+        }
     }
 
     compressed[compressedIndex] = '\0'; // Null-terminate the compressed string
@@ -26,4 +30,15 @@ void compressString(char *str, char *compressed) {
     if (strlen(compressed) >= n) {
         strcpy(compressed, str);
     }
+}
+
+int main() {
+    char input[] = "abbbbbbbbb";
+    char compressed[100]; // Ensure enough space for compression
+
+    compressString(input, compressed);
+
+    printf("Compressed String: %s\n", compressed); // Should print "ab8"
+
+    return 0;
 }
