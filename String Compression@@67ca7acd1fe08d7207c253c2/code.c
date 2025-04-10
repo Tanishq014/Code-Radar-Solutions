@@ -1,19 +1,36 @@
 #include <string.h>
-void compressString(char str[],char compressed[])
+
+void compressString(char str[], char compressed[])
 {
-    int len=strlen(str);
-    int conti=0;
-    int count=1;
-    int n=-1;
-    for(int i=0;i<len;i++)
+    int len = strlen(str);
+    int count = 1;
+    int n = 0;
+
+    for (int i = 0; i < len; i++)
     {
-        if( str[i]==str[i+1] )
-        {if(str[i+2]==str[i+1]&&i<n-2){count++;}else if(count<2){compressed[++n]=str[i];count=1;}}
-        else
+        // Count consecutive same characters
+        while (i < len - 1 && str[i] == str[i + 1])
         {
-            if( count>2 ){compressed[++n]=str[i];compressed[++n]=count+'0';count=1;}
-            else{compressed[++n]=str[i];count=1;}
+            count++;
+            i++;
         }
+
+        // Always store the character
+        compressed[n++] = str[i];
+
+        // Add count if more than 2
+        if (count > 2)
+        {
+            char buffer[10];             // Temporary buffer to hold the count as a string
+            sprintf(buffer, "%d", count); // Convert int to string
+            for (int j = 0; buffer[j] != '\0'; j++)
+            {
+                compressed[n++] = buffer[j];
+            }
+        }
+
+        count = 1; // Reset count for the next group
     }
-    compressed[++n]='\0';
+
+    compressed[n] = '\0'; // Null-terminate the string
 }
